@@ -7,7 +7,9 @@ class Search extends Component {
     super(props);
     this.state = {
       response: [],
-      key: "AIzaSyCkhDGUis0KKHWcYXA4QC6aOUn6fWLIsAw"
+      title: '',
+      authors: [''],
+      imageLinks: {smallThumbnail: ''}
     };
   }
   componentDidMount() {
@@ -31,7 +33,8 @@ class Search extends Component {
             return (
               <div key={id}>
                 {book.volumeInfo.title} <br />
-                {book.volumeInfo.authors}
+
+                {book.volumeInfo.authors[0]}
                 <br />
                 {book.volumeInfo.categories}
                 <hr />
@@ -49,5 +52,4 @@ class Search extends Component {
 }
 
 export default Search;
-//this.state.response.items.volumeInfo.title
-//{book.volumeInfo.imageLinks.smallThumbnail}
+
