@@ -1,6 +1,5 @@
 import React from "react";
 import Search from "./Search";
-
 import "./styles.css";
 
 function App() {
