@@ -5,9 +5,17 @@ import "../styles/bookCard.css";
 
 const BookCard = props => {
   console.log('PROPS', props)
-  // const learnMore = () => {
-  //   window.open(require({props.book.saleInfo.buyLink}))
-  // }
+  const shorten = str => {
+    if (str.includes(":")) {
+      let array = str.split(":");
+      return array[0];
+    } else if (str.includes(".")) {
+      let array = str.split(".");
+      return array[0];
+    }else if (str.length > 30) {
+      return str.slice(0, 25) + "..."
+    }
+  }
   return (
     <Container>
       <Row>
@@ -28,7 +36,9 @@ const BookCard = props => {
                     }
                     alt="book cover"
                   />
-                  <h6>{book.volumeInfo.authors[0]}</h6>
+                  {book.volumeInfo.authors ? (
+                    <h6>{book.volumeInfo.authors[0]}</h6>
+                  ) : (null)}
                   <Button href={book.volumeInfo.previewLink} target="_">
                     Learn More</Button>
                 </Card.Body></div>
@@ -57,4 +67,3 @@ const BookCard = props => {
 
 export default BookCard;
 
-//{book.salesInfo.buyLink}

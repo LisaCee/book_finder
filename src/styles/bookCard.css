@@ -57,3 +57,7 @@ h1 {
 .front div.card-title.h5 {
   margin-top: -20px;
 }
+
+h5 {
+  font-family: 'Didact Gothic', sans-serif;
+}
