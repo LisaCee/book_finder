@@ -1,47 +1,59 @@
 img {
-    max-width: 140px;
-    height: 175px;
-    margin: 0 auto;
-  }
-  .flip-container {
-    /* margin: 50px; */
-    perspective: 1000;
-    display: inline-block;
-  }
-  .flip-container:hover .card {
-    transform: rotateY(180deg);
-  }
-  
-  .front,
-  .back,
-  .card {
-    width: 250px;
-    height: 300px;
-  }
-  .card {
-    transition: 0.5s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-  img {
-    display: block;
-    margin-top: 10px;
-  }
-  .front,
-  .back {
-    backface-visibility: hidden;
-    position: absolute;
-  }
-  .front {
-    z-index: 1;
-    transform: rotateY(180deg);
-  }
-  .back {
-    z-index: 2;
-    transform: rotateY(0deg);
-  }
-  
-  h1 {
-    font-family: "Special Elite", cursive;
-  }
-  
+  max-width: 140px;
+  height: 175px;
+  margin: 0 auto;
+  display: block;
+}
+
+.back img {
+  max-width: 200px;
+  height: 250px;
+  margin-top: 1.25rem;
+}
+.card {
+  margin: 0 auto;
+  width: 250px;
+  height: 350px;
+  background-color: cornsilk !important;
+  border-radius: 5%;
+}
+
+h1 {
+  font-family: "Special Elite", cursive;
+}
+.flip-container {
+  perspective: 1000;
+  display: inline-block;
+}
+.flip-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back,
+.card {
+  width: 250px;
+  height: 300px;
+}
+.card {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+.front {
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.back {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.front div.card-title.h5 {
+  margin-top: -20px;
+}

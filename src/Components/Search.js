@@ -38,6 +38,7 @@ class Search extends Component {
     return (
       <div className="searchScreen">
         <h1>Blind Date with a Book</h1>
+        <h4>Who said you can't judge a book by it's cover?  Enter a search term and judge away.</h4>
         <input
           type="text"
           name="searchTerm"
