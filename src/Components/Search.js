@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import BookCard from "./BookCard";
-import {Popover} from 'react-bootstrap';
 
 class Search extends Component {
   constructor(props) {
@@ -36,14 +35,10 @@ class Search extends Component {
     }
   };
   render() {
-  //   const citing = ( <Popover id="popover-basic" title="Popover right">
-  //   And here's some <strong>amazing</strong> content. It's very engaging. right?
-  // </Popover>)
-     
     return (
       <div className="searchScreen">
         <h1>Blind Date with a Book</h1>
-        {/* <h5 trigger="hover" overlay={citing} placement="right">Who said you can't judge a book by it's cover?  Enter a search term and judge away.</h5> */}
+        <h5>Who said you can't judge a book by it's cover?  Enter a search term and judge away.</h5>
         <input
           type="text"
           name="searchTerm"

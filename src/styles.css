@@ -2,12 +2,16 @@
   font-family: sans-serif;
   text-align: center;
 }
-
 body {
-  background-color: lightcyan !important;
+  background-color: #bedbdb !important;
 }
-
 * {
   line-height: 1.5;
   padding: 1%;
+}
+h1 {
+  font-family: "Special Elite", cursive;
+}
+h5 {
+  font-family: "Didact Gothic", sans-serif;
 }
