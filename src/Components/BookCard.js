@@ -17,7 +17,7 @@ const BookCard = props => {
       return array[0];
     } 
   else if (str.length > 30) {
-      return str.slice(0, 25) + "..."
+      return str.slice(0, 30) + "..."
     } else {
       return str;
     }
@@ -27,7 +27,7 @@ const BookCard = props => {
       <Row>
         {props.book.map((book, id) => {
           return (
-            <Col sm={6} lg={4} key={id}>
+            <Col md={6} lg={4} key={id}>
               <div className="flip-container">
                 <Card key={id}>
                   <div className="front"> 
@@ -61,8 +61,8 @@ const BookCard = props => {
                       alt="book cover"
                     />
                     {book.volumeInfo.categories ? (
-                      <h5>{book.volumeInfo.categories[0]}</h5>) :
-                      (null)}
+                      <p>Genre: {book.volumeInfo.categories[0]}</p>) :
+                      (<p>Genre: Unknown</p>)}
                     {book.volumeInfo.pageCount ? (
                       <p>{book.volumeInfo.pageCount} pages</p>) :
                       (null)}

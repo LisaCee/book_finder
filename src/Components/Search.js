@@ -37,19 +37,22 @@ class Search extends Component {
   render() {
     return (
       <div className="searchScreen">
-        <h1>Blind Date with a Book</h1>
-        <h5>Who said you can't judge a book by it's cover?  Enter a search term and judge away.</h5>
-        <input
-          type="text"
-          name="searchTerm"
-          value={this.state.searchTerm}
-          onChange={this.handleInput}
-          placeholder="Author, Title, or Keyword"
-          onKeyPress={this.onEnterButton}
-        />
-        <button type="submit" onClick={this.onSearch}>
-          Go
+        <div className="searchBox">
+          <h1>Blind Date with a Book</h1>
+          <h5>Who said you can't judge a book by it's cover?  Enter a search term and judge away.</h5>
+          <input
+            type="text"
+            name="searchTerm"
+            value={this.state.searchTerm}
+            onChange={this.handleInput}
+            placeholder="Author, Title, or Keyword"
+            onKeyPress={this.onEnterButton}
+            required
+          />
+          <button type="submit" onClick={this.onSearch}>
+            Go
         </button>
+        </div>
         <div>
           <BookCard book={this.state.items} />
         </div>
