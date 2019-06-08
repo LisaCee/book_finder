@@ -7,11 +7,12 @@
 }
 .card {
 margin: 0 auto;
-background-color: #f4decf !important;
+background-color: #F3E8D5 !important;
 border-radius: 5%;
 transition: 0.5s;
 transform-style: preserve-3d;
 position: relative;
+margin-top: 40px;
 }
 .card-title {
   margin: 0 auto;

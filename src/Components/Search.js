@@ -30,17 +30,12 @@ class Search extends Component {
         console.log("Error", error);
       });
   };
-  // onEnterButton = e => {
-  //   if (e.key === "Enter") {
-  //     this.onSearch();
-  //   }
-  // };
   render() {
     return (
       <div className="searchScreen">
         <div className="searchBox">
           <h1>Blind Date with a Book</h1>
-          <h5>Who said you can't judge a book by it's cover?  Enter a search term and judge away.</h5>
+          <h5>Who said you can't judge a book by it's cover? <br/> Enter a search term and judge away.</h5>
           <form onSubmit={this.onSearch}>
           <input
             type="text"
@@ -48,7 +43,6 @@ class Search extends Component {
             value={this.state.searchTerm}
             onChange={this.handleInput}
             placeholder="Author, Title, or Keyword"
-            // onKeyPress={this.onEnterButton}
             required
           />
           <button type="submit">
