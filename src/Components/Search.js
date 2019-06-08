@@ -14,7 +14,8 @@ class Search extends Component {
     e.preventDefault();
     this.setState({ [e.target.name]: e.target.value });
   };
-  onSearch = () => {
+  onSearch = e => {
+    e.preventDefault();
     let searchTerm = this.state.searchTerm;
     let baseURL = `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}`;
     fetch(baseURL)
@@ -29,29 +30,31 @@ class Search extends Component {
         console.log("Error", error);
       });
   };
-  onEnterButton = e => {
-    if (e.key === "Enter") {
-      this.onSearch();
-    }
-  };
+  // onEnterButton = e => {
+  //   if (e.key === "Enter") {
+  //     this.onSearch();
+  //   }
+  // };
   render() {
     return (
       <div className="searchScreen">
         <div className="searchBox">
           <h1>Blind Date with a Book</h1>
           <h5>Who said you can't judge a book by it's cover?  Enter a search term and judge away.</h5>
+          <form onSubmit={this.onSearch}>
           <input
             type="text"
             name="searchTerm"
             value={this.state.searchTerm}
             onChange={this.handleInput}
             placeholder="Author, Title, or Keyword"
-            onKeyPress={this.onEnterButton}
+            // onKeyPress={this.onEnterButton}
             required
           />
-          <button type="submit" onClick={this.onSearch}>
+          <button type="submit">
             Go
         </button>
+        </form>
         </div>
         <div>
           <BookCard book={this.state.items} />
