@@ -13,10 +13,14 @@
   transform-style: preserve-3d;
   position: relative;
   margin-top: 40px;
+  margin-top: 40px;
+  height: calc(100% - 40px);
+  width: 100%;
 }
 div.card-title.h5{
-  margin: 0 auto;
+  margin: 0.35rem auto;
   font-weight: 500;
+  font-family: "Special Elite", cursive;
 }
 .front,
 .back,
@@ -59,4 +63,9 @@ a.btn-primary {
   border: 0px solid transparent !important;
   padding: 3% !important;
   margin: 5% 0 !important;
+}
+
+a.btn-primary:hover {
+  background-color: #4e888a !important;
+  font-weight: bold;
 }

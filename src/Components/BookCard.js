@@ -28,7 +28,7 @@ const BookCard = props => {
       <Row>
         {props.book.map((book, id) => {
           return (
-            <Col md={6} lg={4} key={id}>
+            <Col sm={12} md={6} lg={4} key={id}>
               <div className="flip-container">
                 <Card key={id}>
                   <div className="front">
