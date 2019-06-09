@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import BookCard from "./BookCard";
+import {Button} from 'react-bootstrap';
 
 class Search extends Component {
   constructor(props) {
@@ -45,9 +46,9 @@ class Search extends Component {
             placeholder="Author, Title, or Keyword"
             required
           />
-          <button type="submit">
+          <Button type="submit">
             Go
-        </button>
+        </Button>
         </form>
         </div>
         <div>

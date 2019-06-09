@@ -63,7 +63,7 @@ const BookCard = props => {
                     />
                     {book.volumeInfo.categories ? (
                       <p>Genre: {book.volumeInfo.categories[0]}</p>) :
-                      (<p>Genre: Unknown</p>)}
+                      (null)}
                     {book.volumeInfo.pageCount ? (
                       <p>{book.volumeInfo.pageCount} pages</p>) :
                       (null)}
