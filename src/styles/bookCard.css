@@ -1,5 +1,4 @@
 .flip-container {
-  perspective: 1000;
   display: inline-block;
 }
 .flip-container:hover .card {
@@ -7,26 +6,24 @@
 }
 .card {
   margin: 0 auto;
-  background-color: #FFFDEF !important;
+  background-color: #fffdef !important;
   border-radius: 5%;
-  transition: 0.5s;
+  transition: 0.8s;
   transform-style: preserve-3d;
   position: relative;
   margin-top: 40px;
-  margin-top: 40px;
-  height: calc(100% - 40px);
   width: 100%;
 }
-div.card-title.h5{
-  margin: 0.35rem auto;
+div.card-title.h5 {
   font-weight: 500;
   font-family: "Special Elite", cursive;
+  margin-top: -3%;
 }
 .front,
 .back,
 .card {
   width: 290px;
-  height: 355px;
+  height: 365px;
   box-sizing: content-box;
 }
 .front,
@@ -40,7 +37,6 @@ div.card-title.h5{
 .front {
   z-index: 1;
   transform: rotateY(180deg);
-  margin-top: -1%;
 }
 .back {
   z-index: 2;
@@ -68,4 +64,8 @@ a.btn-primary {
 a.btn-primary:hover {
   background-color: #4e888a !important;
   font-weight: bold;
+}
+
+h6 {
+  margin-top: 10px !important;
 }

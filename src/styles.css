@@ -17,12 +17,15 @@ h1 {
   color: #474343;
 }
 input {
-  background-color: #FFFDEF !important;
+  background-color: #fffdef !important;
   padding: 1%;
+  border: transparent;
+}
+input:active {
+  border: transparent;
 }
 .btn-primary {
   background-color: #5ea5a7 !important;
   border: 0px solid transparent !important;
-  padding: 1.2% !important;
+  padding: 1% !important;
 }
-

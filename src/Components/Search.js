@@ -7,8 +7,7 @@ class Search extends Component {
     super(props);
     this.state = {
       searchTerm: "",
-      items: [],
-      title: ""
+      items: []
     };
   }
   handleInput = e => {
