@@ -30,7 +30,7 @@ Do you need some ideas?  Try one of these:
 - `Lisa` (hey, that's me)
 - `NK Jemisin` (author)
 
-**insert gif here from screen to gif
+![](purple-rain.gif)
 
 ## License
 
