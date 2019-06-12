@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Blind Date with a Book
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+## Summary
+I created this project as a first introduction to the Google Books API.  Rather than do a traditional search, I chose to make it into a 'Blind Date', where the initial search only returns the book cover, genre, and number of pages.  Then, if the user is interested in one or more of the books, they can hover over the book card to see the title and author revealed.  From this view they can also connect to Google Books directly to see a preview of the book.
 
-In the project directory, you can run:
+## Languages and Frameworks
 
-### `npm start`
+- React | [Learn More](https://reactjs.org/)
+- React Bootstrap | [Learn More](https://react-bootstrap.github.io/)
+- Bootstrap | [Learn More](https://getbootstrap.com/)
+- Google Books API | [Learn More](https://developers.google.com/books/) 
+- Netlify | [Learn More](https://www.netlify.com)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+From the command prompt of your choice, navigate to the `book_finder` folder.  To install dependencies run `yarn` or `npm install`.  Once the dependencies have loaded, type `yarn start` or `npm start` to run the program locally on your computer.
 
-### `npm test`
+## Use Online
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This porgram is also deployed on Netlify and can be accessed on any internet browser [here](https://lisacee-book-finder.netlify.com/) 
 
-### `npm run build`
+## Input Data
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This program does a general search of the Google Books API.  A user can enter a title, author, or keyword(s) into the search box.  
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Do you need some ideas?  Try one of these:
+- `Harry Potter` (title)
+- `candy` (keyword)
+- `Lisa` (hey, that's me)
+- `NK Jemisin` (author)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**insert gif here from screen to gif
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the terms of the [MIT license](https://opensource.org/licenses/MIT).
