@@ -25,7 +25,7 @@ This porgram is also deployed on Netlify and can be accessed on any internet bro
 This program does a general search of the Google Books API.  A user can enter a title, author, or keyword(s) into the search box.  
 
 Do you need some ideas?  Try one of these:
-- `Harry Potter` (title)
+- `Anne of Green Gables` (title)
 - `candy` (keyword)
 - `Lisa` (hey, that's me)
 - `NK Jemisin` (author)
